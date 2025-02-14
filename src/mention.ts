@@ -324,9 +324,9 @@ export class Mention extends Module<MentionOption> {
       },
       this.selectHandler.bind(this)
     );
-    quill.keyboard.bindings[Keys.TAB].unshift(
-      quill.keyboard.bindings[Keys.TAB].pop()!
-    );
+    // quill.keyboard.bindings[Keys.TAB].unshift(
+    //   quill.keyboard.bindings[Keys.TAB].pop()!
+    // );
 
     for (let selectKey of this.options.selectKeys ?? []) {
       quill.keyboard.addBinding(
